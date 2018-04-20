@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>MeCavi-Cadastro</title>
+    <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../Css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../Css/alert.css"/>
+    <link rel="stylesheet" type="text/css" href="../Css/btn.css"/>
+    <link rel="stylesheet" type="text/css" href="../Css/styleInput.css"/>
+    <link rel="stylesheet" type="text/ css" href="../Css/bootstrap-theme.min.css"/>
+    
+    <script type="text/javascript" src="../JavaScript/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="../JavaScript/validacaoCadastro.js"></script>
+    
+</head>
+    <body>
+        
+                <div class="divTituloHome">
+                    <section class="sectionLogo">
+                        <article class="articleLogo"><img src="../img/Logo.png" class="fotoLogo"></article>
+                        <article class="articleLogo"> <img src="../img/bannerMecavi.png" class="fotoLetra"></article>
+                    </section>
+                </div>
+        
+        <div name="erronome" class="alert alert-danger">
+            Informe seu <strong>NOME</strong>.
+        </div>
+        
+        <div name="errosobrenome" class="alert alert-danger">
+            Informe seu <strong>SOBRENOME</strong>.
+        </div>
+        
+        <div name="erroemail" class="alert alert-danger">
+            Informe seu <strong>EMAIL</strong>.
+        </div>
+        
+        <div name="errosenha" class="alert alert-danger">
+            Informe sua <strong>SENHA</strong>.
+        </div>
+        
+        <div name="erroconfirmarsenha" class="alert alert-danger">
+            Informe o campo <strong>CONFIRMA SENHA</strong>.
+        </div>
+        
+        <div name="errosenhacomsenha" class="alert alert-danger">
+            <strong>SENHA</strong> e <strong>CONFIRMA SENHA</strong> tem que ser iguais.
+        </div>
+        
+        <div name="errodia" class="alert alert-danger">
+            Informe seu <strong>DIA DO SEU NASCIMENTO</strong>.
+        </div>
+        
+        <div name="erromes" class="alert alert-danger">
+            Informe seu <strong>MÊS DO SEU NASCIMENTO</strong>.
+        </div>
+        
+        <div name="erroano" class="alert alert-danger">
+            Informe seu <strong>ANO DO SEU NASCIMENTO</strong>.
+        </div>
+        
+        <div name="erronumerocell" class="alert alert-danger">
+            Informe seu <strong>NÚMERO DO SEU CELULAR</strong>.
+        </div>
+        
+                    <form method="get" name="cadastro" action="../PHP/cadastro.php">
+                        <section class="sectionCadastro">
+<!----------------------------INPUT PRIMEIRO NOME/SOBRE NOME--------------------------------------------->
+                            <article class="articleCadastro">
+                                <!-----------------INPUT PRIMEIRO NOME----------------------------------------->
+                                <input id="Tipo1" type="text" name="primeironome" placeholder="Primeiro nome"/>
+                                <!------------------INPUT SOBRE NOME------------------------------------>
+                                <input id="Tipo1" type="text" name="Sobrenome" placeholder="Sobrenome"/>
+                            </article>
+                        
+<!----------------------------INPUT EMAIL---------------------------------------------------------------->
+                            <article class="articleCadastro">
+                                <input id="Tipo3" type="email" name="Email" placeholder="Email">
+                            </article>
+                        
+<!----------------------------INPUT SENHA/CONFIRMA SENHA ------------------------------------------------>                           
+                            <article class="articleCadastro">
+                                <!---------------------INPUT SENHA---------------------------------->
+                                <input id="Tipo1" type="password" name="Senha" placeholder="Senha">
+                                <!-------------INPUT CONFIRMA SENHA-------------------------------------------------->
+                                <input id="Tipo1" type="password" name="ConfirmaSenha"  placeholder="Confirma senha">
+                            </article>
+                            
+<!----------------------------INPUT PAIS----------------- ----------------------------------------------->
+                            <article class="articleCadastro"><select id="Tipo1" name="Pais">
+                                    
+                                <option value="África do Sul">África do Sul</option>
+                                <option value="Albânia">Albânia</option>
+                                <option value="Alemanha">Alemanha</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Anguilla">Anguilla</option>
+                                <option value="Antigua">Antigua</option>
+                                <option value="Arábia Saudita">Arábia Saudita</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Armênia">Armênia</option>
+                                <option value="Aruba">Aruba</option>
+                                <option value="Austrália">Austrália</option>
+                                <option value="Áustria">Áustria</option>
+                                <option value="Azerbaijão">Azerbaijão</option>
+                                <option value="Bahamas">Bahamas</option>
+                                <option value="Bahrein">Bahrein</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Barbados">Barbados</option>
+                                <option value="Bélgica">Bélgica</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Bermudas">Bermudas</option>
+                                <option value="Botsuana">Botsuana</option>
+                                <option value="Brasil" selected>Brasil</option>
+                                <option value="Brunei">Brunei</option>
+                                <option value="Bulgária">Bulgária</option>
+                                <option value="Burkina Fasso">Burkina Fasso</option>
+                                <option value="botão">botão</option>
+                                <option value="Cabo Verde">Cabo Verde</option>
+                                <option value="Camarões">Camarões</option>
+                                <option value="Camboja">Camboja</option>
+                                <option value="Canadá">Canadá</option>
+                                <option value="Cazaquistão">Cazaquistão</option>
+                                <option value="Chade">Chade</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Cidade do Vaticano">Cidade do Vaticano</option>
+                                <option value="Colômbia">Colômbia</option>
+                                <option value="Congo">Congo</option>
+                                <option value="Coréia do Sul">Coréia do Sul</option>
+                                <option value="Costa do Marfim">Costa do Marfim</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Croácia">Croácia</option>
+                                <option value="Dinamarca">Dinamarca</option>
+                                <option value="Djibuti">Djibuti</option>
+                                <option value="Dominica">Dominica</option>
+                                <option value="EUA">EUA</option>
+                                <option value="Egito">Egito</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Emirados Árabes">Emirados Árabes</option>
+                                <option value="Equador">Equador</option>
+                                <option value="Eritréia">Eritréia</option>
+                                <option value="Escócia">Escócia</option>
+                                <option value="Eslováquia">Eslováquia</option>
+                                <option value="Eslovênia">Eslovênia</option>
+                                <option value="Espanha">Espanha</option>
+                                <option value="Estônia">Estônia</option>
+                                <option value="Etiópia">Etiópia</option>
+                                <option value="Fiji">Fiji</option>
+                                <option value="Filipinas">Filipinas</option>
+                                <option value="Finlândia">Finlândia</option>
+                                <option value="França">França</option>
+                                <option value="Gabão">Gabão</option>
+                                <option value="Gâmbia">Gâmbia</option>
+                                <option value="Gana">Gana</option>
+                                <option value="Geórgia">Geórgia</option>
+                                <option value="Gibraltar">Gibraltar</option>
+                                <option value="Granada">Granada</option>
+                                <option value="Grécia">Grécia</option>
+                                <option value="Guadalupe">Guadalupe</option>
+                                <option value="Guam">Guam</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Guiana">Guiana</option>
+                                <option value="Guiana Francesa">Guiana Francesa</option>
+                                <option value="Guiné-bissau">Guiné-bissau</option>
+                                <option value="Haiti">Haiti</option>
+                                <option value="Holanda">Holanda</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Hong Kong">Hong Kong</option>
+                                <option value="Hungria">Hungria</option>
+                                <option value="Iêmen">Iêmen</option>
+                                <option value="Ilhas Cayman">Ilhas Cayman</option>
+                                <option value="Ilhas Cook">Ilhas Cook</option>
+                                <option value="Ilhas Curaçao">Ilhas Curaçao</option>
+                                <option value="Ilhas Marshall">Ilhas Marshall</option>
+                                <option value="Ilhas Turks & Caicos">Ilhas Turks & Caicos</option>
+                                <option value="Ilhas Virgens (brit.)">Ilhas Virgens (brit.)</option>
+                                <option value="Ilhas Virgens(amer.)">Ilhas Virgens(amer.)</option>
+                                                                <option value="Ilhas Wallis e Futuna">Ilhas Wallis e Futuna</option>
+                                <option value="Índia">Índia</option>
+                                <option value="Indonésia">Indonésia</option>
+                                <option value="Inglaterra">Inglaterra</option>
+                                <option value="Irlanda">Irlanda</option>
+                                <option value="Islândia">Islândia</option>
+                                <option value="Israel">Israel</option>
+                                <option value="Itália">Itália</option>
+                                <option value="Jamaica">Jamaica</option>
+                                <option value="Japão">Japão</option>
+                                <option value="Jordânia">Jordânia</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Latvia">Latvia</option>
+                                <option value="Líbano">Líbano</option>
+                                <option value="Liechtenstein">Liechtenstein</option>
+                                <option value="Lituânia">Lituânia</option>
+                                <option value="Luxemburgo">Luxemburgo</option>
+                                <option value="Macau">Macau</option>
+                                <option value="Macedônia">Macedônia</option>
+                                <option value="Madagascar">Madagascar</option>
+                                <option value="Malásia">Malásia</option>
+                                <option value="Malaui">Malaui</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Malta">Malta</option>
+                                <option value="Marrocos">Marrocos</option>
+                                <option value="Martinica">Martinica</option>
+                                <option value="Mauritânia">Mauritânia</option>
+                                <option value="Mauritius">Mauritius</option>
+                                <option value="México">México</option>
+                                <option value="Moldova">Moldova</option>
+                                <option value="Mônaco">Mônaco</option>
+                                <option value="Montserrat">Montserrat</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Nicarágua">Nicarágua</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Nigéria">Nigéria</option>
+                                <option value="Noruega">Noruega</option>
+                                <option value="Nova Caledônia">Nova Caledônia</option>
+                                <option value="Nova Zelândia">Nova Zelândia</option>
+                                <option value="Omã">Omã</option>
+                                <option value="Palau">Palau</option>
+                                <option value="Panamá">Panamá</option>
+                                <option value="Papua-nova Guiné">Papua-nova Guiné</option>
+                                <option value="Paquistão">Paquistão</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Polinésia Francesa">Polinésia Francesa</option>
+                                <option value="Polônia">Polônia</option>
+                                <option value="Porto Rico">Porto Rico</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Quênia">Quênia</option>
+                                <option value="Rep. Dominicana">Rep. Dominicana</option>
+                                <option value="Rep. Tcheca">Rep. Tcheca</option>
+                                <option value="Reunion">Reunion</option>
+                                <option value="Romênia">Romênia</option>
+                                <option value="Ruanda">Ruanda</option>
+                                <option value="Rússia">Rússia</option>
+                                <option value="Saipan">Saipan</option>
+                                <option value="Samoa Americana">Samoa Americana</option>
+                                <option value="Senegal">Senegal</option>
+                                <option value="Serra Leone">Serra Leone</option>
+                                <option value="Seychelles">Seychelles</option>
+                                <option value="Singapura">Singapura</option>
+                                <option value="Síria">Síria</option>
+                                <option value="Sri Lanka">Sri Lanka</option>
+                                <option value="St. Kitts & Nevis">St. Kitts & Nevis</option>
+                                <option value="St. Lúcia">St. Lúcia</option>
+                                <option value="St. Vincent">St. Vincent</option>
+                                <option value="Sudão">Sudão</option>
+                                <option value="Suécia">Suécia</option>
+                                <option value="Suiça">Suiça</option>
+                                <option value="Suriname">Suriname</option>
+                                <option value="Tailândia">Tailândia</option>
+                                <option value="Taiwan">Taiwan</option>
+                                <option value="Tanzânia">Tanzânia</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                                <option value="Tunísia">Tunísia</option>
+                                <option value="Turquia">Turquia</option>
+                                <option value="Ucrânia">Ucrânia</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Uruguai">Uruguai</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Vietnã">Vietnã</option>
+                                <option value="Zaire">Zaire</option>
+                                <option value="Zâmbia">Zâmbia</option>
+                                <option value="Zimbábue">Zimbábue</option>
+
+                                </select></article>
+                            
+<!----------------------------INPUT DATA DE NASCIMENTO--------------------------------------------------->
+                            <article class="articleCadastro">
+                                <label class="subtemaCadastro">Data de nascimento</label>
+                                <br>
+                                <select name="dia" id="Tipo2" >
+                                      <option selected="selected" value="">Dia</option>
+                                      <option value="01">1</option>
+                                      <option value="02">2</option>
+                                      <option value="03">3</option>
+                                      <option value="04">4</option>
+                                      <option value="05">5</option>
+                                      <option value="06">6</option>
+                                      <option value="07">7</option>
+                                      <option value="08">8</option>
+                                      <option value="09">9</option>
+                                      <option value="10">10</option>
+                                      <option value="11">11</option>
+                                      <option value="12">12</option>
+                                      <option value="13">13</option>
+                                      <option value="14">14</option>
+                                      <option value="15">15</option>
+                                      <option value="16">16</option>
+                                      <option value="17">17</option>
+                                      <option value="18">18</option>
+                                      <option value="19">19</option>
+                                      <option value="20">20</option>
+                                      <option value="21">21</option>
+                                      <option value="22">22</option>
+                                      <option value="23">23</option>
+                                      <option value="24">24</option>
+                                      <option value="25">25</option>
+                                      <option value="26">26</option>
+                                      <option value="27">27</option>
+                                      <option value="28">28</option>
+                                      <option value="29">29</option>
+                                      <option value="30">30</option>
+                                      <option value="31">31</option>
+                                  </select>
+                                
+                                <select name="mes" id="Tipo2" >
+                                      <option selected="selected" value="">Mês</option>
+                                      <option value="Janeiro">Janeiro</option>
+                                      <option value="Fevereiro">Fevereiro</option>
+                                      <option value="Março">Março</option>
+                                      <option value="Abril">Abril</option>
+                                      <option value="Maio">Maio</option>
+                                      <option value="Junho">Junho</option>
+                                      <option value="Julho">Julho</option>
+                                      <option value="Agosto">Agosto</option>
+                                      <option value="Setembro">Setembro</option>
+                                      <option value="Outrubo">Outubro</option>
+                                      <option value="Novembro">Novembro</option>
+                                      <option value="Dezembro">Dezembro</option>
+                                  </select>
+                                
+                                <select name="ano" id="Tipo2">
+                                      <option selected="selected" value="">Ano</option>
+                                      <option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option><option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970">1970</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1965">1965</option><option value="1964">1964</option><option value="1963">1963</option><option value="1962">1962</option><option value="1961">1961</option><option value="1960">1960</option><option value="1959">1959</option><option value="1958">1958</option><option value="1957">1957</option><option value="1956">1956</option><option value="1955">1955</option><option value="1954">1954</option><option value="1953">1953</option><option value="1952">1952</option><option value="1951">1951</option><option value="1950">1950</option><option value="1949">1949</option><option value="1948">1948</option><option value="1947">1947</option><option value="1946">1946</option><option value="1945">1945</option><option value="1944">1944</option><option value="1943">1943</option><option value="1942">1942</option><option value="1941">1941</option><option value="1940">1940</option><option value="1939">1939</option><option value="1938">1938</option><option value="1937">1937</option><option value="1936">1936</option><option value="1935">1935</option><option value="1934">1934</option><option value="1933">1933</option><option value="1932">1932</option><option value="1931">1931</option><option value="1930">1930</option><option value="1929">1929</option><option value="1928">1928</option><option value="1927">1927</option><option value="1926">1926</option><option value="1925">1925</option><option value="1924">1924</option><option value="1923">1923</option><option value="1922">1922</option><option value="1921">1921</option><option value="1920">1920</option><option value="1919">1919</option><option value="1918">1918</option><option value="1917">1917</option><option value="1916">1916</option><option value="1915">1915</option><option value="1914">1914</option><option value="1913">1913</option><option value="1912">1912</option><option value="1911">1911</option><option value="1910">1910</option><option value="1909">1909</option><option value="1908">1908</option><option value="1907">1907</option><option value="1906">1906</option><option value="1905">1905</option>
+                                  </select>
+                            </article>
+                            
+<!----------------------------INPUT SEXO----------------------------------------------------------------->
+                            <article class="articleCadastro">
+                                <label class="subtemaCadastro">Sexo</label>
+                                <br>
+                                <select   id="Tipo1" name="sexo">
+                                    <option value="homem">Masculino</option>
+                                    <option value="mulher">Feminino</option>  
+                                </select>
+                            </article>
+                            
+<!----------------------------INPUT NUMERO DO CELULAR---------------------------------------------------->
+                            <article class="articleCadastro">
+                                
+                                <label class="subtemaCadastro">Número do celular</label>
+                                <br>
+                                <input id="Tipo1" type="text" name="Numero_cell" placeholder="Número">
+                            </article>
+
+<!----------------------------------BOTÃO---------------------------------------------------------------->
+                           
+                                <article class="articleCadastro"><input type="submit" value="Cadastrar"  name="cadastro" class="btnMe"/></article>
+                           
+                        </section>
+                    </form>
+    </body>
+</html>

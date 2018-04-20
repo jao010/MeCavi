@@ -1,0 +1,837 @@
+html,body {
+    background-color:aliceblue;
+    background-size: 100% 100%;
+    background-attachment:fixed;
+    font-family:serif;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 0em 0em 0em;
+    line-height:1.5em;
+    font-size: 20px;
+    overflow-x:hidden;
+}
+
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+img.fotoLogo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    top: 30%;
+    margin-left: -85px;
+    margin-top: -15px;
+    border-radius: 4px;
+}
+
+img.fotoLetra {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 50%;
+    top: 30%;
+    margin-left: -85px;
+    margin-top: -15px;
+    border-radius: 4px;
+}
+
+section.sectionLogo {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+article.articleLogo:nth-child(2){
+    left: 50px;
+    top: 5px;
+    position: relative;
+    
+}
+
+/*-------------------------MENU DO SITE---------------------------------*/
+
+.Menu,
+.Menu ul,
+.Menu li,
+.Menu a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+ 
+.Menu {
+    height: 40px;
+    width: 217px;
+
+    background: #4c4e5a;
+    background: -webkit-linear-gradient(top, #ededed 0%,#ffffff 100%);
+    background: -moz-linear-gradient(top, #7d90ff 0%,#454755 100%);
+    background: -o-linear-gradient(top, #7d90ff 0%,#454755 100%);
+    background: -ms-linear-gradient(top, #7d90ff 0%,#454755 100%);
+    background: linear-gradient(top, #7d90ff 0%,#454755 100%);
+ 
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+ 
+.Menu li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    height: 40px;
+}
+
+.Menu ul { display: none; }
+
+.Menu li a {
+    display: block;
+    padding: 0 14px;
+    margin: 6px 0;
+    line-height: 28px;
+    white-space: nowrap;
+    text-decoration: none;
+ 
+    border-left: 1px solid #afafaf;
+    border-right: 1px solid #afafaf;
+ 
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+ 
+    color: #585858;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+ 
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+ 
+.Menu li:first-child a { border-left: none; }
+.Menu li:last-child a{ border-right: none; }
+ 
+.Menu li:hover > a { color: #8fde62; }
+
+.Menu ul { display: none; }
+
+.Menu ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+ 
+    opacity: 0;
+    background: #4c4e5a;
+    background: -webkit-linear-gradient(top, #ededed 0%,#ffffff 100%);
+    background: -moz-linear-gradient(top, #7d90ff 0%,#454755 100%);
+    background: -o-linear-gradient(top, #7d90ff 0%,#454755 100%);
+    background: -ms-linear-gradient(top, #7d90ff 0%,#454755 100%);
+    background: linear-gradient(top, #7d90ff 0%,#454755 100%);
+ 
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+ 
+    -webkit-transition: opacity .25s ease .1s;
+    -moz-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+    transition: opacity .25s ease .1s;
+}
+ 
+.Menu li:hover > ul { opacity: 1; }
+ 
+.Menu ul li {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+ 
+    -webkit-transition: height .25s ease .1s;
+    -moz-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+}
+ 
+.Menu li:hover > ul li {
+    height: 36px;
+    width: 160px;
+    overflow: visible;
+    padding: 0;
+    display:block;
+}
+
+.Menu li:hover ul, .Menu li.over ul{
+    display:block;
+}
+
+.Menu ul li a {
+    width: 120px;
+    padding: 4px 0 4px 40px;
+    margin: 0;
+ 
+    border: none;
+    border-bottom: 1px solid #353539;
+}
+ 
+.Menu ul li:last-child a { border: none; }
+
+.MenuNav{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -105px;
+    margin-top: -20px;
+}
+
+.Menu a.lista { background: url(../img/docs.png) no-repeat 6px center; }
+.Menu a.mercados { background: url(../img/casa_verde.png) no-repeat 6px center; }
+
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+/*--CSS RESET--*/
+label.subtema {
+    text-align: center;
+    font-size: 18.5px;
+    font-family: "Calibri", serif, sans-serif;
+    font-weight:normal;
+}
+
+label.subtemaCadastro {
+    text-align: left;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.8);
+    font-family: serif,sans-serif;
+    text-shadow: 0px 0px 0.5px rgb(0,0,0);
+}
+
+label.subtemacadastro2 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.8);
+    font-family: serif,sans-serif;
+    text-shadow: 0px 0px 0.5px rgb(0,0,0);
+    margin-top: 18000px;
+}
+
+p.DescricaoP{
+    text-align: left;
+    font-size: 20px;
+    color: rgb(0,0,0,);
+    box-sizing: border-box;
+    font-family: "Calibri", serif,sans-serif;
+    height: 10px;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    margin-bottom: 2px;
+    margin-top: -50px;
+    margin-left: 20px;
+}
+
+.divbackground {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    background-color: black;
+    opacity:0.67;
+    z-index: 1;
+}
+
+/*------------------------------------------------------------------------*/
+/*-------------------------PAGINA INICIAL---------------------------------*/
+/*------------------------------------------------------------------------*/
+
+div.divIndex {
+    border: 1px solid white;
+    background-color: rgba(248,248,255,1);
+    width: 34%;
+    height:78.5%;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-250px;
+    margin-top:-280px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 8px rgb(246, 255, 24);
+    overflow: hidden;
+    z-index: 9999;
+}
+
+div.divTituloLogin {
+    background: rgb(255,255,255);   
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); 
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+    width: 500px;
+    height: 70px;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 3px black;
+}
+
+label.tituloIndex {
+    text-align: center;
+    font-size: 45px;
+    font-family: "Georgia", Times, serif;
+    font-style: italic;
+    font-weight:normal;
+    margin: 20px;
+    position: relative;
+    left: 50%;
+    top: 30%;
+    margin-left: -80px;
+    margin-top: -50;
+    text-shadow: 0px 0px 6px black;
+}
+
+section.sectionIndex{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    margin-top:-40px;
+    margin-right: -14em;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+article.articleIndex:nth-child(1){
+    left: 10px;
+    position: relative;
+    
+}
+
+article.articleIndex:nth-child(2){
+    left:  12px;
+    position: relative;
+    
+}
+
+article.articleIndex:nth-child(3){
+    left: 15px;
+    position: relative;
+    
+}
+
+article.articleIndex:nth-child(4){
+    left: -270px;
+    top: 30px;
+    position: relative;
+    
+}
+
+article.articleIndex:nth-child(5){
+    left: -235px;
+    top: 30px;
+    position: relative;
+    
+}
+
+section.sectionIndex{
+   
+}
+
+/*------------------------------------------------------------------------*/
+/*-------------------------RECUPERAR SENHA--------------------------------*/
+/*------------------------------------------------------------------------*/
+
+div.divRS {
+    border: 1px solid white;
+    background-color: rgba(248,248,255,1);
+    width: 50%;
+    height:60.5%;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-350px;
+    margin-top:-280px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 8px rgb(246, 255, 24);
+    overflow: hidden;
+    z-index: 9999;
+}
+
+div.divTituloRS {
+    background: rgb(255,255,255);   
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); 
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 3px black;
+}
+
+label.tituloRS {
+    text-align: center;
+    font-size: 45px;
+    font-family: "Georgia", Times, serif;
+    font-style: italic;
+    font-weight:normal;
+    margin: 20px;
+    position: relative;
+    left: 50%;
+    top: 30%;
+    margin-left: -190px;
+    margin-top: -50;
+    text-shadow: 0px 0px 6px black;}
+
+section.sectionRS{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top:100px;
+    margin-left: -250px;
+    
+}
+
+article.articleRS:nth-child(2){
+    top: 20px;
+    left: 10px;
+    position: relative;
+    
+}
+
+article.articleRS:nth-child(3){
+    top: 20px;
+    left: 10px;
+    position: relative;
+    
+}
+
+#tituloRS{
+    position: relative;
+    left: 50%;
+    top: 30%;
+    margin-left: -10px;
+    margin-top: -50;
+}
+
+/*------------------------------------------------------------------------*/
+/*-------------------------CADASTRO---------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+div.divCadastro {
+    border: 1px solid white;
+    background-color: rgba(248,248,255,1);
+    width: 50%;
+    height:auto; 
+    margin:0;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-350px;
+    margin-top:-280px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 8px rgb(246, 255, 24);
+    overflow: hidden;
+    z-index: 9999;
+}
+
+div.divTituloCadastro {
+    background: rgb(0,255,255);   
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); 
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 3px black;
+}
+
+label.tituloCadastro{
+    text-align: center;
+    font-size: 45px;
+    font-family: "Georgia", Times, serif;
+    font-style: italic;
+    font-weight:normal;
+    margin: 20px;
+    position: relative;
+    left: 50%;
+    top: 30%;
+    margin-left: -100px;
+    margin-top: -50;
+    text-shadow: 0px 0px 6px black;
+}
+
+section.sectionCadastro{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top:10px;
+    margin-left: -200px;
+    display: flex;
+    flex-direction:column;
+}
+
+article.articleCadastro{
+    position: relative;
+    padding-top:10px;
+ 
+}
+
+article.articleCadastro:nth-child(8){
+    margin-left: 8em;
+    margin-top: 1em;
+}
+
+
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 25%;
+  position:relative;
+  left: 35%;
+}
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.alert .alert-link {
+  font-weight: bold;
+}
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+.alert > p + p {
+  margin-top: 5px;
+}
+
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+
+
+/*------------------------------------------------------------------------*/
+/*-------------------------PAGINA HOME---------------------------------*/
+/*------------------------------------------------------------------------*/
+
+div.divHome {
+    border: 1px solid white;
+    background-color: rgba(248,248,255,1);
+    width: 80%;
+    height:580px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-550px;
+    margin-top:-300px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 8px rgb(246, 255, 24);
+    overflow: hidden;
+    z-index: 9999;
+    
+}
+
+div.divTituloHome {
+    background: #3ca63e;
+    background: -moz-linear-gradient(45deg,  #3ca63e 15%, #3ca63e 15%, #3ca63e 16%, #3ca63e 16%, #fec001 32%, #fec001 48%, #f82519 65%);
+    background: -webkit-linear-gradient(45deg,  #3ca63e 15%,#3ca63e 15%,#3ca63e 16%,#3ca63e 16%,#fec001 32%,#fec001 48%,#f82519 65%);
+    background: linear-gradient(45deg,  #3ca63e 15%,#3ca63e 15%,#3ca63e 16%,#3ca63e 16%,#fec001 32%,#fec001 48%,#f82519 65%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ca63e', endColorstr='#f82519',GradientType=1 );
+    width: 100%;
+    height: 100%;
+    max-height: 4.5em;
+    position:relative;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 3px black;
+    z-index: 9999;
+}
+
+div.divMenuHome{
+    background: rgb(255, 255, 255);   
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+    width: 30%;
+    height: 50px;
+    position: relative;
+    float: left;
+    margin-top: 0px;
+    margin-left: 440px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0px 1px 3px black;
+    z-index: 9999;
+}
+
+label.tituloHome {
+    text-align: center;
+    font-size: 45px;
+    font-family:  Times, serif;
+    font-style: italic;
+    font-weight:normal;
+    margin: 20px;
+    position: relative;
+    left: 50%;
+    top: 30%;
+    margin-left: -35px;
+    margin-top: -50;
+    text-shadow: 0px 0px 6px black;
+}
+
+section.sectionHome{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top:-120px;
+    margin-left: -150px;
+    
+}
+
+article.articleHome:nth-child(3){
+    top: 10px;
+    position: relative;
+    
+}
+
+article.articleHome:nth-child(4){
+    top: 10px;
+    position: relative;
+    
+}
+
+
+section.sectionHome{
+    flex-direction: column;
+    align-items: center;
+}
+
+div.DescricaoSite{
+    border: 1px solid #b7b7b7;
+    border-radius: 10px;
+    width: 300px;
+    height: 220px;
+    position: relative;
+    top: 22%;
+    left: 10%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 1px 1px 1px 0px;
+}
+
+div.divFotoLogo{
+    background-image: url(../img/Logo.png);
+    background-size: 100% 100%;
+    position: relative;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+div.conteudo{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    margin-top: -130px;
+}
+
+div.divMer{
+    width: 200px;
+    height: 250px;
+    position: relative;
+    top: 20%;
+    left: 10%;
+    float: left;
+    margin: 10px;
+    
+}
+
+
+
+div.divFoto{
+    background-size: 100% 100%;
+    border: 1px solid #b4aeae;
+    border-radius: 55px;
+    width: 170px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -85px;
+    margin-top: -120px;
+}
+
+
+div.divFotoBlack{
+    background-color: black;
+    opacity: 0;
+    background-size: 100% 100%;
+    border-radius: 55px;
+    width: 170px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -85px;
+    margin-top: -120px;
+    
+}
+
+div.divFotoBlack:hover{
+    background-color: black;
+    opacity: 0.7;
+    transition: 0.5s;
+    
+}
+
+div.divSubtema{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -70px;
+    margin-top: 70px;
+}
+
+label.LBdentro{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px #bc0000;
+    font-size: 20.5px;
+    font-family: "Calibri", serif, sans-serif;
+    font-weight:bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    opacity: 1;
+    z-index: 9999;
+}
+/*------------------------------------------------------------------------*/
+/*-------------------------MERCADOS FAVORITOS-----------------------------*/
+/*------------------------------------------------------------------------*/
+
+div.favorito{
+    width: 200px;
+    height: 250px;
+    border-radius: 7px;
+/*    background-color: white;*/
+    position: relative;
+    padding: -10px;
+    margin: 10px;
+    float: left;
+    box-shadow: 0px 1px 1px 1px;
+    background: #3ca63e;
+    background: -moz-linear-gradient(45deg,  #3ca63e 15%, #3ca63e 15%, #3ca63e 16%, #3ca63e 16%, #fec001 32%, #fec001 48%, #f82519 65%);
+    background: -webkit-linear-gradient(45deg,  #3ca63e 15%,#3ca63e 15%,#3ca63e 16%,#3ca63e 16%,#fec001 32%,#fec001 48%,#f82519 65%);
+    background: linear-gradient(45deg,  #3ca63e 15%,#3ca63e 15%,#3ca63e 16%,#3ca63e 16%,#fec001 32%,#fec001 48%,#f82519 65%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ca63e', endColorstr='#f82519',GradientType=1 );
+}
+
+
+div.fotoFavoM{
+    width: 130px;
+    height: 130px;
+    border-radius: 6px;
+    position: relative;
+    left: 18%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0.5px 0.5px 1px;
+    top: 5%;
+}
+
+div.fotoFavoP{
+    width: 130px;
+    height: 130px;
+    border-radius: 6px;
+    position: relative;
+    left: 18%;
+    background-size: 100% 100%;
+    top: 5%;
+}
+
+div.descriFavo{
+    width: 150%;
+    height: 40px;
+/*    background-color: coral;*/
+    position: relative;
+     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    top: 10%;
+    right: 29%;
+}
+
+label.descriFavo{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    box-sizing:border-box;
+    font-family: "Genebra", serif,sans-serif;
+    height: 10px;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+    margin-bottom: 2px;
+    margin-top: -50px;
+    margin-left: 20px;
+}
+
+label.descriFavoPreco{
+    text-align: left;
+    font-size: 15px;
+    font-weight:900;
+    color: rgb(255, 255, 255);
+    box-sizing:border-box;
+    font-family: "Genebra", serif,sans-serif;
+    height: 10px;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+    margin-bottom: 2px;
+    margin-top: -50px;
+    margin-left: 40px;
+}
+/*------------------------------------------------------------------------*/
+/*-------------------------CADASTRO FEITO---------------------------------*/
+/*------------------------------------------------------------------------*/
+
+div.positionDiv {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+}
+

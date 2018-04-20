@@ -1,0 +1,112 @@
+/*INPUT DE EMAIL E SENHA INDEX*/
+#login {
+    width: 120px;    
+    height: 25px;    
+    border-radius: 4px;   
+    text-indent: 10px;
+    border: 1px solid rgba(0,0,0,0.7);    
+    text-decoration:none;   
+    outline:none;  
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.5);
+}
+
+#login:hover { 
+    box-shadow: 0px 2px 0px 0px rgba(190, 193, 125);
+}
+
+#login:focus {
+    box-shadow: 0px 0px 15px rgb(73, 75, 18);       
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+/*INPUT RECUPERAR SENHA*/
+#LS {
+    width:220px;    
+    height: 25px;    
+    border-radius: 4px;   
+    text-indent: 10px;
+    border: 1px solid rgba(0,0,0,0.7);    
+    text-decoration:none;   
+    outline:none;  
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.5);
+}
+
+#LS:hover { 
+    box-shadow: 0px 2px 0px 0px rgba(190, 193, 125);
+}
+
+#LS:focus {
+    box-shadow: 0px 0px 15px rgb(73, 75, 18);       
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+/*INPUT DE CADASTRO*/
+
+/*TIPO 1 DE INPUT----------------------------*/
+#Tipo1{
+    width:200px;    
+    height: 25px;
+    text-indent: 10px;
+    border-radius: 4px;   
+    border: 1px solid rgba(0,0,0,0.7);  
+    text-decoration:none; 
+    outline:none;  
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.5);
+}
+
+#Tipo1:hover { 
+    box-shadow: 0px 2px 0px 0px rgba(190, 193, 125);
+}
+
+#Tipo1:focus {
+    box-shadow: 0px 0px 15px rgb(73, 75, 18);       
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+/*TIPO 2 DE INPUT----------------------------*/
+#Tipo2 /*CABE UM INPUT NA LINHA E É UM POUCO MAIOR DO QUE O TIPO 1*/{
+    width:70px;    
+    height: 25px;
+    text-indent: 10px;
+    border-radius: 4px;   
+    border: 1px solid rgba(0,0,0,0.7);    
+    text-decoration:none;   
+    outline:none;  
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.5);
+}
+
+#Tipo2:hover { 
+    box-shadow: 0px 2px 0px 0px rgba(190, 193, 125);
+}
+
+#Tipo2:focus {
+    box-shadow: 0px 0px 15px rgb(73, 75, 18);       
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+/*TIPO 3 DE INPUT----------------------------*/
+#Tipo3 /*USADO PARA SELECT*/{
+    width:350px;    
+    height: 25px;    
+    border-radius: 4px;
+    text-indent: 10px;
+    border: 1px solid rgba(0,0,0,0.7);    
+    text-decoration:none;
+    outline:none;  
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.5);
+}
+
+#Tipo3:hover { 
+    box-shadow: 0px 2px 0px 0px rgba(190, 193, 125);
+}
+
+#Tipo3:focus {
+    box-shadow: 0px 0px 15px rgb(73, 75, 18);       
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
